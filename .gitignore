@@ -1,3 +1,5 @@
 *.o
 scanner
 parser
+symtab
+kplc
