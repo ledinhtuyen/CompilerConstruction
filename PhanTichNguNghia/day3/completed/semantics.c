@@ -33,7 +33,8 @@ Object *lookupObject(char *name)
 
 void checkFreshIdent(char *name)
 {
-  if (lookupObject(name) != NULL)
+  Object * obj = findObject(symtab->currentScope->objList, name);
+  if (obj != NULL)
     error(ERR_DUPLICATE_IDENT, currentToken->lineNo, currentToken->colNo);
 }
 
