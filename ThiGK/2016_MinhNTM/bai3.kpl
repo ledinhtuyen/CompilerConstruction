@@ -1,0 +1,49 @@
+Program bai3;
+
+Var i : Integer;
+      n : Integer;
+      sum : Integer;
+      a : Integer;
+
+Function tritd(ttd : Integer) : Integer;
+    Var x : Integer;
+          y : Integer;
+          z : Integer;
+          t : Integer;
+    Begin
+        (*If  ttd < 0  Then  tritd := -ttd Else tritd := ttd;*)
+        (*ttd := if ttd > 0 then ttd else -ttd * if ttd > 0 then x else -x;*)
+        (*x := if x = 0 then 0 else
+                                            if  x > 0 then x else -x;*)
+            (*x, y, z, t := y, z, t, 'a' ;*)
+    End;
+
+Function tong(ttd : Integer) : Integer;
+    Begin
+        sum := sum + ttd;
+        tong := sum;
+    End;
+
+Begin
+    n := -1;
+
+    While n < 0 Do
+        Begin
+            Call WriteC('n');
+            Call WriteC('=');
+            n := READI;
+        End;
+
+    i := 1;
+    sum := 0;
+
+    For i := 1 To n Do
+        Begin
+            a := READI;
+            sum := 0  + tong(tritd(a));
+        End;
+
+    Call WriteI(sum);
+
+    (*Do While n < 0 do While n = 1 do n := 2;*)
+End.

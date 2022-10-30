@@ -1,0 +1,14 @@
+Program Bai2;
+Var n : Integer;
+    result : Integer;
+Begin
+    result := 1;
+    repeat n := READI; until n > 0;
+
+    repeat
+        result := result * 2;
+        n := n - 1;
+    until n = 0;
+
+    call writei(result);
+End.

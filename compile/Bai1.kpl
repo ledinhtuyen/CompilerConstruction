@@ -1,0 +1,7 @@
+Program Bai1;
+Var n : Integer;
+    i : Integer;
+
+Begin
+    while n > 5 do n := n - 1;
+End.

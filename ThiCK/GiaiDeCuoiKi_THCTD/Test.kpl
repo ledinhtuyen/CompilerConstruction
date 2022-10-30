@@ -1,0 +1,8 @@
+Program Bai1;
+Var n : Integer;
+    i : Integer;
+
+Begin
+    n := 2**(10-3*2);
+    Call WriteI(n);
+End.

@@ -1,0 +1,24 @@
+Program Bai2;
+Var score : Integer;
+    scoreCharacter : Char;
+Begin
+    score := READI;
+
+    Switch score
+    Begin
+        case 0:
+        case 1:
+        case 2:
+            scoreCharacter := 'D';
+            break;
+        case 3:
+            scoreCharacter := 'E';
+            break;
+        case 4:
+            scoreCharacter := 'A';
+        default:
+            scoreCharacter := 'F';
+    End;
+
+    call writec(scoreCharacter);
+End.

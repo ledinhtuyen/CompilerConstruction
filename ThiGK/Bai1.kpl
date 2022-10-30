@@ -1,0 +1,27 @@
+Program Bai1;
+Var n : Integer;
+    max : Integer;
+    x : Integer;
+    i : Integer;
+
+(*Procedure FindMax(n: Integer);
+    Begin
+        For i:= 1 to n Do
+        Begin
+            if A(.i.) > max then max = A(.i.);
+        End;
+    End;*)
+
+Begin
+    n := READI;
+    For i:= 1 to n Do
+        Begin
+            x := READI;
+            if x > max then max := x;
+        End;
+    (*Call FindMax(n);*)
+    if n > 0 then
+        Begin
+            Call WRITEI(max);
+        End;
+End.

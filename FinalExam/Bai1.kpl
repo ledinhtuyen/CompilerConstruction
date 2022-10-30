@@ -1,0 +1,8 @@
+Program Bai1;
+Var n : Integer;
+Begin
+    n := 5;
+    repeat n := n - 1 until n = 0;
+
+    call writei(n);
+End.

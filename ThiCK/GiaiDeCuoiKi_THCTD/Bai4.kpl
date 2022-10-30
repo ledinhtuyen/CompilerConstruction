@@ -1,0 +1,6 @@
+Program Bai1;
+Var n : String;
+    
+Begin
+    n := 2**5;
+End.
